@@ -1,0 +1,20 @@
+{
+  "title": "SearchLeads Enrichment",
+  "type": "object",
+  "required": ["apolloLink", "noOfLeads", "fileName"],
+  "properties": {
+    "apolloLink": {
+      "type": "string",
+      "title": "Apollo Search Link"
+    },
+    "noOfLeads": {
+      "type": "integer",
+      "title": "Number of Leads",
+      "default": 1000
+    },
+    "fileName": {
+      "type": "string",
+      "title": "File Name"
+    }
+  }
+}
