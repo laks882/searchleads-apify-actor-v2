@@ -1,4 +1,4 @@
-const { Actor } = require('apify');
+import { Actor } from 'apify';
 const axios = require('axios');
 require('dotenv').config();
 
