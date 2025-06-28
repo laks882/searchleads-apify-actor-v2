@@ -24,7 +24,7 @@ const run = async () => {
         { headers }
     );
 
-    const logId = startRes.data[0]?.log?.LogID;
+    const logId = startRes.data?.record_id;
     if (!logId) throw new Error('Failed to get LogID from enrichment request.');
 
     let result = null;
