@@ -1,12 +1,12 @@
 {
   "name": "searchleads-enrichment",
   "version": "1.0.0",
+  "type": "module",
   "main": "main.js",
   "dependencies": {
     "apify": "^3.0.0",
     "axios": "^1.6.0",
     "dotenv": "^16.0.3"
-    "type": "module"
   },
   "scripts": {
     "start": "node main.js"
