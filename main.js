@@ -4,6 +4,9 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+// ✅ Helper function for sleep
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 const run = async () => {
     await Actor.init();
 
@@ -51,7 +54,7 @@ const run = async () => {
             throw new Error(`Enrichment ${status}`);
         }
 
-        await Actor.sleep(10000);
+        await sleep(10000); // ✅ Replaces Actor.sleep
         retries++;
     }
 
